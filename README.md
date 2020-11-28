@@ -33,6 +33,7 @@ struct DataGridFixedHeadersApp: App {
   }
 }
 ```
+![Demo Table](./demo.gif)
 
 ## MIT LICENSE
 
