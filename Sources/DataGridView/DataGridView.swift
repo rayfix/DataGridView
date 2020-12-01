@@ -295,8 +295,12 @@ extension RFGridView: UICollectionViewDelegate {
 
 public struct DataGridView: UIViewRepresentable {
 
-  let dataGrid: DataGrid
+  public let dataGrid: DataGrid
 
+  public init(dataGrid: DataGrid) {
+    self.dataGrid = dataGrid
+  }
+  
   public func makeUIView(context: Context) -> some UIView {
     RFGridView(dataGrid: dataGrid, missing: "NA")
   }
